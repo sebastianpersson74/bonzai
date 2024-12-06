@@ -1,0 +1,332 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size:16px;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+.hero {
+    height: 100vh;
+    background: rgb(84,234,189);
+    background: linear-gradient(180deg, rgba(84,234,189,1) 0%, rgba(0,102,204,1) 100%);
+    justify-content: center;
+    align-items: center;
+    color:white;
+    display:flex;
+    flex-direction: column;
+}
+
+.hero img {
+    width:50%;
+    margin-bottom:50px;
+}
+
+button {
+    background-color: #FFA500;
+    border: none;
+    padding:15px 30px;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e79600;
+}
+
+.searchbar {
+    display:flex;
+    justify-content: center;
+    background:white;
+    border-radius: 50px;
+    margin-top:25px;
+}
+
+.searchbar input {
+    padding:15px 50px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    color:black;
+    border:none;
+    border-radius: 50px;
+}
+
+.howto-img {
+    background-color:#FFA500;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding:50px 0px;
+}
+
+.howto-img img {
+    width:20%;
+}
+
+.text-box {
+    padding:50px 20px;
+}
+
+.img-box {
+    width:100%;
+    height:250px;
+    overflow:hidden;
+}
+
+footer {
+    display:flex;
+    background-color: #013365;
+    padding:25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-img img {
+    width:25%;
+}
+
+.footer-menu {
+    color:white;
+    width:100%;
+    text-align: right;
+}
+
+.navbar {
+    background-color:#013365;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:25px;
+}
+
+.navbar img {
+    width:10%;
+}
+
+.results-rubbe {
+    text-align: center;
+}
+
+.hotel-result {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.hotel-result p {
+    padding-left:25px;
+    margin-top:-25px;
+}
+
+.hotel-result img {
+    width:100%;
+}
+
+.name-rating {
+    display:flex;
+    justify-content: space-between;
+    padding:25px;
+    align-items: center;
+}
+
+.ratings {
+    display:flex;
+
+}
+
+.ratings img {
+    width:20px;
+    height:20px;
+}
+
+.divider {
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider img {
+    width:25px;
+    margin: 0px 20px;
+}
+
+.div-line {
+    height:2px;
+    background-color: black;
+    width:100%;
+}
+
+.price-book {
+    display:flex;
+    justify-content:space-between;
+    padding:25px;
+}
+
+.hero-img img {
+    width:100%;
+}
+
+.bkn-hotel {
+    padding:20px;
+}
+
+.bkn-price {
+    padding: 20px;
+}
+
+.photogrid {
+    width:100vw;
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+
+}
+
+.photogrid img {
+    width:100%;
+}
+
+.menu-text {
+    display:none;
+}
+
+/* Desktopanpassning */
+
+@media only screen and (min-width:760px) {
+    .hero {
+        display:flex;
+        background-color:red;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:0px 150px;
+    }
+
+    .hero img {
+        width:40%;
+    }
+
+    .howto {
+        display:flex;
+    }
+
+    .howto-img {
+        width:50%;
+    }
+
+    .numberhotels {
+        display:flex;
+        flex-direction: row-reverse;
+    }
+
+    .img-box {
+        width:50%;
+    }
+
+    .numberone {
+        display:flex;
+    }
+
+    .navbar {
+        height:75px;
+    }
+
+    .navbar img {
+        width: 50px;
+    }
+
+    .navbar span {
+        display:none;
+    }
+
+    .menu-text {
+        display:flex;
+    }
+
+    .menu-text h3 {
+        margin-right:50px;
+    }
+
+    .hotel-result {
+        display:flex;
+        flex-direction: row;
+        padding: 50px 0px;
+    }
+
+    .hotel-result h3 {
+        font-size:30px;
+    }
+
+    .name-rating {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .hotel-result img {
+        width:50%;
+    }
+
+    .price-book {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .divider {
+        display: flex;
+    }
+
+    .herobooking {
+        display:flex;
+        padding:50px 100px;
+    }    
+
+    .herobooking h1 {
+        font-size: 30px;
+    }
+
+    .hero-img {
+        width:100%;
+    }
+
+    .bkn-hotel {
+        display:flex;
+        flex-direction: column;
+        width:100%;
+    }
+
+    .bkn-price {
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .photogrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-top:50px;
+    }
+}
