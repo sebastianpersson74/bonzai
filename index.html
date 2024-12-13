@@ -10,17 +10,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    /* BEM-kod start */
     <header class="hero">
-            <img src="bonz.ai-logo-white-portrait-full.png" alt="">
-        <section class="searchpart">
-            <h1>FIND YOUR DREAM VACATION</h1>
-            <p>Type in your preferences, let bonz.ai do the rest</p>
-        <form class="searchbar">
-            <input type="text" placeholder="Stockholm, cozy, close to nature, calm">
-            <button type="button" onclick="window.location.href='results.html'">FIND</button>
+    <div class="hero__logo">
+        <img class="hero__logo-image" src="bonz.ai-logo-white-portrait-full.png" alt="Bonz.ai logo">
+    </div>
+    <section class="hero__search">
+        <h1 class="hero__title">FIND YOUR DREAM VACATION</h1>
+        <p class="hero__description">Type in your preferences, let bonz.ai do the rest</p>
+        <form class="hero__form">
+            <input 
+                class="hero__input" 
+                type="text" 
+                placeholder="Stockholm, cozy, close to nature, calm"
+            >
+            <button 
+                class="hero__button" 
+                type="button" 
+                onclick="window.location.href='results.html'"
+            >
+                FIND
+            </button>
         </form>
     </section>
-    </header>
+</header>
+/* BEM-kod slut */
     <section class="howto">
         <section class="howto-img">
             <img src="bonz.ai-logo-white-portrait.png" alt="">

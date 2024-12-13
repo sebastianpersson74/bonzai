@@ -30,12 +30,15 @@ a {
     flex-direction: column;
 }
 
-.hero img {
+.hero__logo-image {
     width:50%;
     margin-bottom:50px;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-button {
+.hero__button {
     background-color: #FFA500;
     border: none;
     padding:15px 30px;
@@ -46,11 +49,11 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.hero__button:hover {
     background-color: #e79600;
 }
 
-.searchbar {
+.hero__form {
     display:flex;
     justify-content: center;
     background:white;
@@ -58,7 +61,7 @@ button:hover {
     margin-top:25px;
 }
 
-.searchbar input {
+.hero__input {
     padding:15px 50px;
     font-family: 'Roboto';
     font-weight: 700;
@@ -221,7 +224,7 @@ grid-row-gap: 0px;
         padding:0px 150px;
     }
 
-    .hero img {
+    .hero__logo {
         width:40%;
     }
 
